@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Overleaf</title>
+
+
+
+    <link rel="icon" href="./assets/images/icon.png" type="image/x-icon" sizes="16x16">
+
+
+
     <link rel="stylesheet" href="./assets/css/style.css">
 
     <script src="https://kit.fontawesome.com/e1811e7568.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <nav>
         <div class="nav-container">
             <a href=""><img src="https://cdn.overleaf.com/images/overleaf-white-65b70e33f35fccdf6f8d.svg" alt=""></a>
             <ul class="nav-menu">
-                <li class="nav-link"><a href="">Features & Benefits</a></li>
+                <li class="nav-link"><a href="">Features & Benefits <i class="fa-solid fa-caret-down"></i></a></li>
                 <li class="nav-link"><a href="">Templates</a></li>
                 <li class="nav-link"><a href="">Plans & Pricing</a></li>
-                <li class="nav-link"><a href="">Help</a></li>
+                <li class="nav-link"><a href="">Help <i class="fa-solid fa-caret-down"></i></a></li>
                 <li class="nav-link signup"><a href="">Register</a></li>
                 <li class="nav-link login"><a href="">Log In</a></li>
             </ul>
@@ -34,7 +43,35 @@
             <div class="header-image">
                 <img src="./assets/images/image1.png" alt="">
             </div>
+            <div class="container register-container">
+                <h3>Get started now</h3>
+                <div class="login-form">
+                    <a class="form" href="">
+                        <div class="image">
+                            <img src="https://cdn.overleaf.com/images/logo_google-76649f741b40aacd27c6.svg" alt="">
+                        </div>
+                        Register Using Google
+                    </a>
+                    <a class="form" href="">
+                        <div class="image">
+                            <img src="https://cdn.overleaf.com/images/logo_orcid-931444d4be9b1641a370.svg" alt="">
+                        </div>
+                        Register Using ORCID
+                    </a>
+                </div>
+                <div class="login-form-2">
+                    <input type="email" name="email" id="email" placeholder="email@example.com">
+                    <input type="password" name="password" id="password" placeholder="********">
+                    <a href="" class="btn">Register</a>
+                </div>
+                <div class="checkbox">
+                    <input type="checkbox" name="mailcheckbox" id="mailcheckbox">
+                    <p>I’d like emails about product offers and company news and events.</p>
+                </div>
+                <p style="color: white;margin-top: 1rem;font-size: 0.9rem;">By registering, you agree to our <span style="text-decoration:underline;"><a href="">terms of service</a></span>.</p>
+            </div>
         </div>
+
     </main>
 
     <section class="quotes">
@@ -46,13 +83,16 @@
                 </div>
                 <div class="quote-text">
                     <p>
-                        Just want to say that I am really grateful for Overleaf, it has enabled a slew of research and 
-                        teaching development in my work that would have been annoyingly difficult before. Even people who 
-                        don’t know LaTeX are participating with me on research proposals and that’s saying something if you 
+                        Just want to say that I am really grateful for Overleaf, it has enabled a slew of research and
+                        teaching development in my work that would have been annoyingly difficult before. Even people
+                        who
+                        don’t know LaTeX are participating with me on research proposals and that’s saying something if
+                        you
                         know what LaTeX is like for the uninitiated. Thanks. And thanks for the support!!
                     </p>
                     <p>
-                        Professor James Friend of the Medically Advanced Devices Lab, University of California, San Diego
+                        Professor James Friend of the Medically Advanced Devices Lab, University of California, San
+                        Diego
                     </p>
                 </div>
             </div>
@@ -72,23 +112,25 @@
             <div class="feature right">
                 <div class="feature-text">
                     <h1>Ease of Use
-                        </h1>
+                    </h1>
                     <p>No complicated LaTeX installation <br> All the packages and templates you need</p>
                 </div>
                 <i class="fa-solid fa-thumbs-up fa-4x"></i>
-            </div><div class="feature">
+            </div>
+            <div class="feature">
                 <i class="fa-sharp fa-solid fa-clock-rotate-left fa-4x"></i>
                 <div class="feature-text">
                     <h1>Document history
-                        </h1>
-                    <p>See what has been added and removed <br> Restore to any older version</p>
+                    </h1>
+                    <p>See what has been <span style="background-color: #a8d8f0;">added</span> and <span style="background-color: #e9f5fb; text-decoration: line-through">removed</span> <br> Restore to any older version</p>
                 </div>
             </div>
             <div class="feature right">
                 <div class="feature-text">
                     <h1>Work from anywhere
-                        </h1>
-                    <p>Access your work from anywhere in the world <br> Work offline and sync your files via Dropbox and GitHub</p>
+                    </h1>
+                    <p>Access your work from anywhere in the world <br> Work offline and sync your files via Dropbox and
+                        GitHub</p>
                 </div>
                 <i class="fa-solid fa-earth-americas fa-4x"></i>
             </div>
@@ -116,85 +158,108 @@
                 <div class="content">
                     <div class="left">
                         <p>
-                            There’s nothing complicated or difficult for you to install, and you can <span>start using LaTeX right now</span>, 
-                            even if you’ve never seen it before. 
+                            There’s nothing complicated or difficult for you to install, and you can <span class="bold">start using
+                                LaTeX right now</span>,
+                            even if you’ve never seen it before.
                             Overleaf comes with a complete, ready to go LaTeX environment which runs on our servers.
                         </p>
                         <p>
-                            With Overleaf you get the same LaTeX set-up wherever you go. By working with your colleagues and students 
-                            on Overleaf, you know that you’re 
+                            With Overleaf you get the same LaTeX set-up wherever you go. By working with your colleagues
+                            and students
+                            on Overleaf, you know that you’re
                             not going to hit any version inconsistencies or package conflicts.
                         </p>
                         <p>
-                            We support almost all LaTeX features, including inserting images, bibliographies, equations, 
-                            and much more! Read about all the exciting things you can do with Overleaf in our LaTeX guides.
+                            We support almost all LaTeX features, including inserting images, bibliographies, equations,
+                            and much more! Read about all the exciting things you can do with Overleaf in our 
+                            <span class="link">LaTeX guides.</span>
                         </p>
                     </div>
                     <div class="right">
                         <p style="padding-bottom: 1.4rem;">
-                            There are thousands of Templates in our template gallery, so it’s really easy to get started, whether you’re writing 
+                            There are thousands of Templates in our template gallery, so it’s really easy to get
+                            started, whether you’re writing
                             a journal article, thesis, CV or something else.
                         </p>
-                        <p style="text-align: center;"><a href="" class="btn">View templates</a></p>
+                        <p style="text-align: center;"><a href="" class="btn btn-black">View templates</a></p>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <h2>Ease of Use</h2>
+            <div class="card card-2">
+                <h2>Collaboration</h2>
                 <div class="content">
                     <div class="left">
                         <p>
-                            There’s nothing complicated or difficult for you to install, and you can <span>start using LaTeX right now</span>, 
-                            even if you’ve never seen it before. 
-                            Overleaf comes with a complete, ready to go LaTeX environment which runs on our servers.
+                            Overleaf makes sure that you’re always up to date with your collaborators and what they are
+                            doing.
+                            There is only a single master version of each document which everyone has access to. It’s
+                            impossible
+                            to make conflicting changes, and you don’t have to wait for your colleagues to
+                            send you the latest draft before you can keep working.
                         </p>
                         <p>
-                            With Overleaf you get the same LaTeX set-up wherever you go. By working with your colleagues and students 
-                            on Overleaf, you know that you’re 
-                            not going to hit any version inconsistencies or package conflicts.
+                            If multiple people want to work on a document at the same time then that’s no problem. You
+                            can see
+                            where your colleagues are typing directly in the editor and their changes show up on your
+                            screen immediately.
                         </p>
-                        <p>
-                            We support almost all LaTeX features, including inserting images, bibliographies, equations, 
-                            and much more! Read about all the exciting things you can do with Overleaf in our LaTeX guides.
-                        </p>
+
                     </div>
-                    <div class="right">
-                        <p style="padding-bottom: 1.4rem;">
-                            There are thousands of Templates in our template gallery, so it’s really easy to get started, whether you’re writing 
-                            a journal article, thesis, CV or something else.
+                    <div class="right box">
+                        <p>
+                            \<span style="color: #3e70bb;">begin</span>{document}
                         </p>
-                        <p style="text-align: center;"><a href="" class="btn">View templates</a></p>
+                        <p>
+                            Work directly with your collaborators in real time
+                        </p>
+                        <p>
+                            \<span style="color: #3e70bb;">end</span>{document}
+                        </p>
                     </div>
                 </div>
+                <div class="bottom">
+                    <h3>Work with Word users</h3>
+                    <p>
+                        Overleaf is so easy to get started with that you’ll be able to invite your non-LaTeX colleagues
+                        to contribute
+                        directly to your LaTeX documents. They’ll be productive from day one and be able to pick up
+                        small amounts of
+                        LaTeX as they go.
+                    </p>
+                </div>
             </div>
-            <div class="card">
-                <h2>Ease of Use</h2>
+            <div class="card card-3">
+                <h2>Document history</h2>
                 <div class="content">
+                    <div class="right box">
+                        <p>
+                            \<span style="color: #3e70bb;">begin</span>{document}
+                        </p>
+                        <p>
+                            View which changes have been <span style="background-color: #a8d8f0;color: black;">added</span> and <span style="background-color: #e9f5fb; text-decoration: line-through;">removed</span>.
+                        </p>
+                        <p>
+                            \<span style="color: #3e70bb;">end</span>{document}
+                        </p>
+                    </div>
                     <div class="left">
                         <p>
-                            There’s nothing complicated or difficult for you to install, and you can <span>start using LaTeX right now</span>, 
-                            even if you’ve never seen it before. 
-                            Overleaf comes with a complete, ready to go LaTeX environment which runs on our servers.
+                            Overleaf includes a history of all of your changes so you can see exactly who changed what,
+                            and when. This makes it extremely easy to keep up to date with any progress made by your
+                            collaborators
+                            and allows you to review recent work.
+
+
                         </p>
                         <p>
-                            With Overleaf you get the same LaTeX set-up wherever you go. By working with your colleagues and students 
-                            on Overleaf, you know that you’re 
-                            not going to hit any version inconsistencies or package conflicts.
+                            In a collaboration or on your own, sometimes mistakes are made. Reverting back to previous
+                            versions is
+                            simple and removes the risk of losing work or regretting a change.
                         </p>
-                        <p>
-                            We support almost all LaTeX features, including inserting images, bibliographies, equations, 
-                            and much more! Read about all the exciting things you can do with Overleaf in our LaTeX guides.
-                        </p>
-                    </div>
-                    <div class="right">
-                        <p style="padding-bottom: 1.4rem;">
-                            There are thousands of Templates in our template gallery, so it’s really easy to get started, whether you’re writing 
-                            a journal article, thesis, CV or something else.
-                        </p>
-                        <p style="text-align: center;"><a href="" class="btn">View templates</a></p>
                     </div>
                 </div>
             </div>
+            <a style="margin-top: 1rem;" href="" class="btn">Start using Overleaf now</a>
         </div>
     </section>
 
@@ -252,9 +317,9 @@
             </div>
             <div class="footer-base">
                 <div class="privacy">
-                    <a href="">© 2022 Overleaf</a>
+                    <a href="">&copy; 2022 Overleaf</a>
                     <a href="">Privacy and Terms</a>
-                    <a href="">English</a>
+                    <a href=""><i class="fa fa-fw fa-language"></i>English</a>
                 </div>
                 <div class="socials">
                     <a href=""><i class="fa-brands fa-square-twitter"></i></a>
@@ -265,4 +330,5 @@
         </div>
     </footer>
 </body>
+
 </html>

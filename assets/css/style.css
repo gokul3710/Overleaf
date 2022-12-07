@@ -451,9 +451,6 @@ main{
     margin-bottom: 1.5rem;
 }
 
-
-
-
 .card .bottom{
     width: 100%;
 }
@@ -542,7 +539,7 @@ footer{
 @media screen and (max-width:600px) {
 
     main{
-        height: 130vh;
+        height: 100vh;
     }
 
     .container{
@@ -559,7 +556,7 @@ footer{
     }
 
     .register-container{
-        height: 70%;
+        height: 60%;
         width: 100%;
     }
 
@@ -598,8 +595,21 @@ footer{
         gap: 1rem;
     }
 
+    .features .btn{
+        margin-top: 2rem;
+    }
+
     .institutions{
         grid-template-columns: repeat(2,1fr);
+    }
+
+    .card .content{
+        grid-template-columns: 1fr;
+    }
+
+    .card .content .right{
+        order: -1;
+        margin: 1rem 0 2rem;
     }
 
     .permalinks{
@@ -607,6 +617,6 @@ footer{
     }
 
     .right.box{
-        display: none;
+        margin: 1rem 0;
     }
 }

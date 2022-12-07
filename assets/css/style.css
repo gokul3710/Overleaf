@@ -26,7 +26,13 @@ html{
 
 a{
     color: white;
+    text-decoration: none;
 }
+
+ul{
+    padding: 0;
+}
+
 
 h1,h2,h3,h4,h5{
     color: white;
@@ -55,6 +61,7 @@ img{
 .nav-menu{
     display: flex;
     gap: 1rem;
+    height: 4rem;
 }
 
 .nav-menu li a{
@@ -70,8 +77,8 @@ img{
     border-color: white;
 }
 
-.nav-menu li.login a,
-.nav-menu li.signup a{
+.login a,
+.signup a{
     border: 2px solid white;
 }
 
@@ -80,6 +87,11 @@ img{
     background: #138a07;
     color: white;
     border-color: #138a07;
+}
+
+.nav-open,
+.nav-close{
+    display: none;
 }
 
 main{
@@ -552,8 +564,79 @@ footer{
         margin: 0 auto;
     }
 
+    
+
     .nav-menu{
+        position: fixed;
+        top: 4rem;
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        left: 0;
         display: none;
+        z-index: 99;
+        background: #1e2530;
+    }
+
+    .nav-menu li{
+        width: 100%;
+        height: 3rem;
+        display: flex;
+        border: 0 none;
+        animation: animation 800ms ease forwards;
+        opacity: 0;
+        background: #1e2530;
+    }
+
+    .nav-menu li:nth-child(2){
+        animation-delay: 100ms;
+    }
+    
+    .nav-menu li:nth-child(3){
+        animation-delay: 200ms;
+    }
+
+    .nav-menu li:nth-child(4){
+        animation-delay: 300ms;
+    }
+
+    .nav-menu li:nth-child(5){
+        animation-delay: 400ms;
+    }
+    .nav-menu li:nth-child(6){
+        animation-delay: 500ms;
+    }
+    .nav-menu li:nth-child(7){
+        animation-delay: 600ms;
+    }
+
+    @keyframes animation {
+        to{
+        
+            opacity: 1;
+        }
+        
+    }
+
+    .nav-menu li a{
+        color: white;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        display: flex;
+        border: 0 none;
+        align-items: center;
+        border-radius: 0;
+    }
+
+    .nav-menu li.login a,
+    .nav-menu li.signup a{
+        border: 0 none;
+    }
+
+    .nav-open{
+        display: block;
     }
     
     .header-image {
@@ -638,8 +721,6 @@ footer{
     .permalinks{
         grid-template-columns: repeat(2,1fr);
     }
-
-
 
     .right.box{
         margin: 1rem 0;

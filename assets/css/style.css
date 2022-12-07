@@ -542,7 +542,7 @@ footer{
 @media screen and (max-width:600px) {
 
     main{
-        height: 100vh;
+        height: 130vh;
     }
 
     .container{
@@ -553,14 +553,36 @@ footer{
     .nav-menu{
         display: none;
     }
+    
+    .header-image {
+        max-width: 90%;
+    }
 
     .register-container{
-        height: 20rem;
+        height: 70%;
         width: 100%;
     }
 
+    .register-container .login-form{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding:0 2rem;
+        gap: 1rem;
+    }
+
     .register-container .login-form-2{
-        display: none;
+        display: grid;
+        margin: 0;
+        padding: 3rem 0 2rem 0;
+    }
+
+    .register-container .login-form-2 input{
+        width: 90vw;
+    }
+
+    .checkbox{
+        align-items: baseline;
+        text-align: left;
     }
 
     .quote{

@@ -539,4 +539,52 @@ footer{
 
 
 
+@media screen and (max-width:600px) {
 
+    main{
+        height: 100vh;
+    }
+
+    .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .nav-menu{
+        display: none;
+    }
+
+    .register-container{
+        height: 20rem;
+        width: 100%;
+    }
+
+    .register-container .login-form-2{
+        display: none;
+    }
+
+    .quote{
+        max-width: 90%;
+    }
+
+    .features{
+        padding: 3rem 0;
+    }
+
+    .features-container{
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .institutions{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .permalinks{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .right.box{
+        display: none;
+    }
+}

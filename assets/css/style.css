@@ -478,17 +478,22 @@ footer{
 
 .footer-container{
     padding: 4rem 0;
+}
+.footer-top{
+    display: flex;
+}
+.footer-container img{
+    height: 2.2rem;
+    width: auto;
+    margin-right: 3rem;
 
 }
 
 .permalinks{
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-template-rows: auto;
-}
-
-.permalinks img{
-    height: 2.2rem;
+    gap: 1rem;
 }
 
 .permalink h3{
@@ -612,9 +617,29 @@ footer{
         margin: 1rem 0 2rem;
     }
 
+    .footer-top{
+        display: grid;
+    }
+
+    .footer-top img{
+        margin: 0 0 2rem 0;
+    }
+
+    .footer-base{
+        display: grid;
+        place-content: center;
+    }
+
+    .socials{
+        margin: 0 auto 2rem;
+        order: -1;
+    }
+
     .permalinks{
         grid-template-columns: repeat(2,1fr);
     }
+
+
 
     .right.box{
         margin: 1rem 0;

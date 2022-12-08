@@ -29,6 +29,10 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: white;
+}
+
 ul{
     padding: 0;
 }
@@ -44,30 +48,20 @@ img{
     display: block;
 }
 
-.nav-container{
-    width: 100%;
-    background-color: #1e2530;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.nav-container img{
-    height: 2.33rem;
-}
-
 .nav-menu{
-    display: flex;
     gap: 1rem;
-    height: 4rem;
 }
 
 .nav-menu li a{
+    color: white;
     background: transparent;
     border: 2px solid transparent;
     padding: 0.3rem 1rem;
     border-radius: 2rem;
+}
+
+.nav-menu>li>a:hover{
+    color: #138a07 !important;
 }
 
 .nav-menu li a:hover{
@@ -76,22 +70,33 @@ img{
     border-color: white;
 }
 
-.login a,
-.signup a{
-    border: 2px solid white;
+.nav-menu li a:is(:focus){
+    color: white;
 }
 
-.nav-menu li.login a:hover,
-.nav-menu li.signup a:hover{
+.nav-menu button{
+    border: 2px solid white;
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+    color: white;
+}
+
+.nav-menu button:hover,
+.nav-menu button:hover{
     background: #138a07;
     color: white;
     border-color: #138a07;
+} 
+
+.dropdown-menu li a{
+    color: #505050;;
 }
 
-.nav-open,
-.nav-close{
-    display: none;
+.dropdown-menu li a:hover{
+    background-color: #138a07;
+    color: white;
 }
+
 
 main{
     position: relative;
@@ -129,7 +134,7 @@ main{
 }
 
 .register-container{
-    height: 17rem;
+    height: 50%;
     width: 100%;
     position: absolute;
     bottom: 0;
@@ -320,7 +325,7 @@ main{
     line-height: 2;
 }
 
-.btn{    
+.button{    
     color: white;
     border-color: white;
     border: 2px solid transparent;
@@ -332,15 +337,15 @@ main{
     font-weight: 700;
 }
 
-.btn:hover{
+.button:hover{
     background-color:  #0e6305;
 }
 
-.btn-black{
+.button-black{
     background-color: #242b35;
 }
 
-.btn-black:hover{
+.button-black:hover{
     background-color:  #242b35;
 }
 
@@ -555,7 +560,7 @@ footer{
 @media screen and (max-width:600px) {
 
     main{
-        height: 100vh;
+        height: 110vh;
     }
 
     .container{
@@ -563,65 +568,21 @@ footer{
         margin: 0 auto;
     }
 
-    
+    .container-fluid{
+        padding: 0 !important;
+    }
+
+    .nav-container img{
+        padding-left: 1rem;
+    }
 
     .nav-menu{
-        position: fixed;
-        top: 4rem;
-        height: fit-content;
-        width: 100%;
-        flex-direction: column;
+        margin-top: 1rem;
         gap: 0;
-        left: 0;
-        display: none;
-        z-index: 99;
-        background: #1e2530;
-    }
-
-    .nav-menu li{
-        width: 100%;
-        height: 3rem;
-        display: flex;
-        border: 0 none;
-        animation: animation 800ms ease forwards;
-        opacity: 0;
-        background: #1e2530;
-    }
-
-    .nav-menu li:nth-child(2){
-        animation-delay: 100ms;
-    }
-    
-    .nav-menu li:nth-child(3){
-        animation-delay: 200ms;
-    }
-
-    .nav-menu li:nth-child(4){
-        animation-delay: 300ms;
-    }
-
-    .nav-menu li:nth-child(5){
-        animation-delay: 400ms;
-    }
-    .nav-menu li:nth-child(6){
-        animation-delay: 500ms;
-    }
-    .nav-menu li:nth-child(7){
-        animation-delay: 600ms;
-    }
-
-    @keyframes animation {
-        to{
-        
-            opacity: 1;
-        }
-        
     }
 
     .nav-menu li a{
         color: white;
-        width: 100%;
-        height: 100%;
         display: grid;
         display: flex;
         border: 0 none;
@@ -629,14 +590,19 @@ footer{
         border-radius: 0;
     }
 
-    .nav-menu li.login a,
-    .nav-menu li.signup a{
-        border: 0 none;
+    .nav-menu button{
+        border: 0 none !important;
+        border-radius: 0;
+        text-align: left;
+    }
+
+    .dropdown-menu li a{
+        color: #505050;
     }
 
     .nav-open{
         display: block;
-    }
+    } 
     
     .header-image {
         max-width: 90%;
@@ -682,7 +648,7 @@ footer{
         gap: 1rem;
     }
 
-    .features .btn{
+    .features .button{
         margin-top: 2rem;
     }
 

@@ -18,7 +18,7 @@ html{
     user-select: none;
 }
 
-.container{
+.container-ovr{
     width: 90%;
     margin: 0 auto;
 }
@@ -560,7 +560,7 @@ footer{
 
 
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:900px) {
 
     main{
         height: 110vh;
@@ -613,7 +613,7 @@ footer{
 
     .register-container{
         height: 60%;
-        width: 100%;
+        width: 100% !important;
     }
 
     .register-container .login-form{
